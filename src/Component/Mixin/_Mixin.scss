@@ -1,0 +1,100 @@
+@import "./_Variable.scss";
+
+$breakpoint:(
+    "xs":0px,
+    "sm":480px,
+    "md":720px,
+    "lg":1070px,
+    "xl":1200px
+);
+
+
+@mixin xs {
+    @media (min-width:map-get($breakpoint,"xs")){
+
+        @content;
+    }
+    
+    
+}
+@mixin sm {
+    @media (min-width:map-get($breakpoint,"sm")){
+
+        @content;
+    }
+    
+    
+}
+@mixin md {
+    @media (min-width:map-get($breakpoint,"md")){
+
+        @content;
+    }
+    
+    
+}
+@mixin lg {
+    @media (min-width:map-get($breakpoint,"lg")){
+
+        @content;
+    }
+    
+    
+}
+@mixin xl {
+    @media (min-width:map-get($breakpoint,"xl")){
+
+        @content;
+    }
+    
+    
+}
+@mixin breakpoint($bp:0){
+    
+    @media (min-width:$bg){
+    
+        @content;
+    }
+}
+
+// $XS:0px;
+// $MD:720px;
+// $lG:1070px;
+@mixin HeadingsMixin($size,$view) {
+    @if  $XS == $size and $view == "XS" {
+        font-size: 20px;
+        
+    } 
+    
+    @else if $MD == $size and $view == "MD"{
+        
+        font-size: 80px;
+    }
+    // lG
+    @else if $lG == $size and $view == lG   {
+        // border-top-color: $color;
+        font-size: 100px;
+      }
+  }
+@mixin ParagraphsMixin($size,$view,$customsize) {
+    @if $customsize and $customsize != "" {
+        font-size: $customsize;
+
+    } @else {
+
+     @if  $XS == $size and $view == "XS"  {
+        font-size: 20px;
+        
+    } 
+    
+    @else if  $MD == $size and $view == "MD" {
+        font-size: 30px;
+        
+    } 
+    @else if  $lG == $size and $view == "lG" {
+        font-size: 40px;
+        
+    } 
+  }
+}
+

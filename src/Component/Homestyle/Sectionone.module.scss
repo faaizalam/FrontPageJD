@@ -1,0 +1,214 @@
+@import "../Mixin/Mixin" ;
+@import "../Mixin/Variable";
+// @import "../Mixin/HeadingsMixin";
+
+.Sectiononeman{
+    scroll-snap-align: center;
+    // background-color: red;
+    // min-height: 400px;
+    // max-height: 100%;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    flex-direction: column;
+    align-items: center;
+    grid-area: secone;
+    
+    width: 100%;
+    .secOneSub{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+     
+        
+        .SvgSection{
+            @include xs {
+                display: none;
+            }
+            @include lg{
+                display: block;
+                position: relative;
+
+            }
+            // margin-top: 20px;
+        
+        }
+    }
+}
+// SvgSection
+// SvgImgSect
+.SvgImgSect{
+   
+   
+    display: block;
+    position: absolute;
+    height: 50px;
+    transform: translateX(50px);
+    display: flex;
+    flex-direction: column;
+    top: 50px;
+    align-items: center;
+   
+    // justify-content: center;
+    img{
+        
+        transform: rotate(-20deg);
+        
+        margin-bottom: 10px;
+    }
+    span{
+        margin-bottom: 5px;
+        
+        transform: rotate(-20deg);
+        margin-left: 20px;
+        // transform: translateX(10px);
+    }
+    // inset: 40px px 0px 0px;
+}
+
+.mainthreD{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    // div:first-child{
+    //     width: 800px;
+
+    width: 100%;
+    // }
+}
+
+.threeDanimdiv{
+    margin-left: 100px;
+
+//   position: relative;
+  height: 100%;
+//   width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+//   width: 100%;
+
+    
+   
+    div{
+        
+            @include xs{
+                width: 100%;
+                height: 100%;
+    
+            }
+            @include lg {
+                
+                width: 100%;
+                height: 100%;
+            }
+    
+        
+    }
+
+}
+.video3d{
+    @include xs{
+       
+        // position: absolute;
+        top: 80px;
+        left: 170px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    @include lg {
+        
+    
+        // position: absolute;
+        top: 80px;
+        left: 230px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    video{
+        @include xs{
+           
+            width: 300px;
+            height: 400px;
+
+        }
+        @include sm{
+           
+            width: 250px;
+            height: 500px;
+
+        }
+        @include md{
+           
+            width: 390px;
+            height: 500px;
+
+        }
+        @include lg {
+            width: 800px;
+            height: 600px;
+            
+        }
+
+    }
+}
+.SeconeUptext{
+height: 250px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+h1{
+     
+@include xs{
+
+    @include HeadingsMixin($XS,XS);
+}
+@include md{
+
+    @include HeadingsMixin($MD,MD);
+}
+@include lg{
+
+    @include HeadingsMixin($lG,lG);
+}
+   
+}
+p{
+     
+    @include xs{
+    
+        @include ParagraphsMixin($XS,XS,"");
+    }
+    @include md{
+    
+        @include ParagraphsMixin($MD,MD,"");
+    }
+    @include lg{
+    
+        @include ParagraphsMixin($lG,lG,"");
+    }
+       
+    }
+}
+
+.productHuntimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    img{
+        border-radius: 10px;
+        width: 350px;
+        height: 60px;
+    }
+
+}

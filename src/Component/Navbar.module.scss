@@ -1,0 +1,214 @@
+@import "./Mixin/Mixin";
+// @import "./Homestyle/Sectionone.module.scss";
+
+
+
+.nav{
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+
+    .LeftNav{
+        margin-left: 20px;
+        
+        
+        .navleft{
+            @include xs {
+                // background-color: red;
+                display: none;
+            }
+            
+            @include lg {
+                display: block;
+                // display: block;
+            
+            
+            display: flex;
+            list-style: none;
+            align-items: center;
+          
+            
+            li{
+                font-size: 23px;
+                margin-left: 20px;
+            }
+            li:hover{
+                transition: all 1s;
+             color: rgb(197, 96, 113);
+            }
+            .Hover{
+                cursor: pointer;
+                
+            }
+            .HOverli{
+                position: absolute;
+              top: 90px;
+              display: none;
+            //   margin: 10px;
+            }
+            .HOverli li{
+                margin-top: 20px;
+            }
+            .Hover:hover .HOverli{
+                // position: relative;
+                list-style: none;
+                display: block;
+            }
+        }
+        
+        
+    }
+    .humburger{
+    
+        @include sm {
+            // background-color: red;
+            display: block;
+        }
+    
+        @include lg {
+            display: none;
+        }
+    }
+    }
+    .logo{
+
+        
+        @include sm {
+            // background-color: red;
+            display: none;
+        }
+        
+        @include lg {
+            display: block;
+            display: flex;
+        }
+    }
+    .logotext{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        span{
+            top: 0;
+            font-size: xxx-large;
+        }
+    }
+}
+
+
+
+
+.Aisde{
+    // display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(69, 69, 109);
+    transform: translate(1500px,0px);
+    transition: all 2s;
+    display: flex;
+    justify-content: flex-end;
+    .sidebarchild{
+        position: fixed;
+        width: 50%;
+        height: 100vh;
+        transition: all 2s;
+        transform: translate(500px,0px);
+        background-color: rgb(102, 102, 212);
+        display: flex;
+        justify-content: flex-end;
+        .sidebarchildElemnts ul li{
+            list-style: none;
+            margin-top: 50px;
+            margin-right: 10px;
+        }
+        .sidebarchildElemnts  {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            .CloseBtn{
+                color: white !important;
+                font-size: 40px;
+
+            }
+            // justify-content: center;
+             
+
+         }
+        
+       
+       
+        
+    }
+    
+    
+}
+
+
+
+
+.ActiveHum{
+    
+   
+    // display: none;
+    z-index: 1;
+    transform: translate(0px);
+    transition: all 2s;
+   
+    .sidebarchild{
+        transition: all 3s;
+        transform: translate(0px);
+    
+      
+    }
+
+    
+}
+
+.Svg{
+    position: relative;
+    margin-top: 20px;
+
+}
+.SvgImg{
+   
+   
+    display: block;
+    position: absolute;
+    height: 50px;
+    transform: translateX(50px);
+    display: flex;
+    flex-direction: column;
+    top: 45px;
+    align-items: center;
+   
+    // justify-content: center;
+    img{
+        
+        transform: rotate(-20deg);
+        
+        margin-bottom: 10px;
+    }
+    span{
+        margin-bottom: 10px;
+        
+        transform: rotate(-20deg);
+        margin-left: 20px;
+        // transform: translateX(10px);
+    }
+    // inset: 40px px 0px 0px;
+}
+
+.LogoInresponsive{
+    @include sm {
+   display: block;
+    }
+    @include lg {
+        display: none;
+    }
+
+}

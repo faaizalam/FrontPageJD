@@ -1,0 +1,10 @@
+*{
+  margin: 0;
+  padding: 0;
+  top: 0;
+}
+
+@import "./Component/Homestyle/Home.module.scss";
+@import "./Component/Layout.module.scss";
+@import "./Component/Navbar.module.scss";
+// @import "./Component/Mixin/_Mixin.scss"

@@ -1,0 +1,32 @@
+@import "../Mixin/Mixin" ;
+@import "../Mixin/Variable";
+$customsize:60;
+.MAINSECONSEC{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    // background-color: red;
+
+
+.secText p{
+    @include xs{
+
+        @include ParagraphsMixin($XS,XS,"");
+
+    }
+    @include md{
+    
+        @include ParagraphsMixin($MD,MD,"");
+    }
+    @include lg{
+       
+    
+        @include ParagraphsMixin($lG,lG,50px);
+    }
+}
+
+
+
+
+}
