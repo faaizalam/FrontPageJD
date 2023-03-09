@@ -102,6 +102,7 @@
 
 
 .Aisde{
+    
     // display: none;
     position: fixed;
     width: 100%;
@@ -136,18 +137,23 @@
 
             }
             // justify-content: center;
-             
-
-         }
+            
+            
+        }
         
-       
-       
+        
+        
         
     }
     
     
 }
 
+.Aisde{
+    @include xl{
+        display: none;
+    }
+}
 
 
 
