@@ -4,7 +4,7 @@ $breakpoint:(
     "xs":0px,
     "sm":480px,
     "md":720px,
-    "lg":1070px,
+    "lg":1100px,
     "xl":1200px
 );
 
@@ -60,23 +60,7 @@ $breakpoint:(
 // $XS:0px;
 // $MD:720px;
 // $lG:1070px;
-@mixin HeadingsMixin($size,$view) {
-    @if  $XS == $size and $view == "XS" {
-        font-size: 20px;
-        
-    } 
-    
-    @else if $MD == $size and $view == "MD"{
-        
-        font-size: 80px;
-    }
-    // lG
-    @else if $lG == $size and $view == lG   {
-        // border-top-color: $color;
-        font-size: 100px;
-      }
-  }
-@mixin ParagraphsMixin($size,$view,$customsize) {
+@mixin HeadingsMixin($size,$view,$customsize) {
     @if $customsize and $customsize != "" {
         font-size: $customsize;
 
@@ -88,7 +72,32 @@ $breakpoint:(
     } 
     
     @else if  $MD == $size and $view == "MD" {
-        font-size: 30px;
+        font-size: 70px;
+        
+    } 
+    @else if  $lG == $size and $view == "lG" {
+        font-size: 70px;
+        
+    } 
+  }
+  }
+@mixin ParagraphsMixin($size,$view,$customsize) {
+    @if $customsize and $customsize != "" {
+        font-size: $customsize;
+
+    } @else {
+
+     @if  $XS == $size and $view == "XS"  {
+        font-size: 15px;
+        
+    } 
+    
+    @else if  $MD == $size and $view == "MD" {
+        font-size: 40px;
+        
+    } 
+    @else if  $SM == $size and $view == "SM" {
+        font-size: 20px;
         
     } 
     @else if  $lG == $size and $view == "lG" {

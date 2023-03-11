@@ -1,5 +1,190 @@
+@import "../Mixin/Mixin" ;
+@import "../Mixin/Variable";
+
 .Sectionthree{
-    scroll-snap-align: center;
-    background-color: rgb(97, 88, 88);
-    // height: 100vh;
+ 
+    // "xs":0px,
+    // "sm":480px,
+    // "md":720px,
+    // "lg":1070px,
+    // "xl":1200px
+    
+    @include xs{
+        position: relative;
+    
+        display: flex;
+        flex-direction: column;
+        
+        // background-color: rgb(139, 148, 131);
+        
+        
+    }
+    @include sm{
+        position: relative;
+    
+        display: flex;
+        flex-direction: column;
+        
+        // background-color: rgb(139, 148, 131);
+        
+        
+    }
+    @include md{
+        position: relative;
+    
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        
+        // background-color: rgb(139, 148, 131);
+        
+        
+    }
+    @include lg{
+        display: flex;
+        flex-direction: row;
+        // background-color: red;
+
+        
+
+    }
+   
+
+    
 }
+
+.svgup {
+    position: absolute;
+    background-color: rgb(255, 234, 234);
+    opacity: 1;
+    height: 20px;
+    width: 100%;
+    
+   
+}
+
+// .svgup svg {
+//     position: relative;
+//     display: block;
+//     width: calc(180% + 1.3px);
+//     height: 67px;
+//     // opacity: 0.5 ;
+// }
+
+// .svgup .shapefill {
+//     fill: #EDF3E7;
+// }
+.mainconthree{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+   
+}
+.leftthree {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   transform: translate(-400px);
+}
+.Linemain{
+    width: 30px;
+background-color: aqua;
+}
+.Linee{
+    height: 1px;
+    width: 30px;
+    background-color: rgb(231, 226, 226);
+}
+
+
+
+h1{
+     
+    @include xs {
+    
+        @include HeadingsMixin($XS,XS,"");
+    }
+    @include md{
+    
+        @include HeadingsMixin($MD,MD,"");
+    }
+    @include lg{
+        // min-width: 200px;
+        // min-width: 200px;
+        @include HeadingsMixin($lG,lG,40px);
+    }
+    
+    max-width: 500px;
+    margin-bottom: 60px;
+}
+.h2three{
+    margin-top: 50px;
+    line-height: 2pc;
+    max-width: 500px;
+    @include xs {
+    
+        @include HeadingsMixin($XS,XS,20px);
+    }
+    @include md{
+    
+        @include HeadingsMixin($MD,MD,20px);
+    }
+    @include lg{
+    
+        @include HeadingsMixin($lG,lG,20px);
+    }
+       
+    }
+
+    // Rightthree
+
+
+    .Rightthree{
+
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        overflow: hidden;
+        align-items: center;
+        div{
+            img{
+                width: 600px;
+                height: 500p;
+            }
+        }
+    }
+    .RightthreeCard{
+        
+        top: 200px;
+        // left: 200px;
+//   overflow: hidden;
+      left:-10px ;
+        transform: translateX(500px);
+        position: absolute;
+        img{
+            width:100%;
+            // height: 400px;
+        }
+    }
+    .leftthree{
+        // transform: translate(-1000px);
+
+    }
+
+
+
+
+
+    // .demomain
+.onscreen{
+    transform: translate(100px);
+    transition: 2s ease-out all;
+}
+
+
+

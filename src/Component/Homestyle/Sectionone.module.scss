@@ -4,15 +4,35 @@
 
 .Sectiononeman{
     scroll-snap-align: center;
-    // background-color: red;
-    // min-height: 400px;
-    // max-height: 100%;
-    display: flex;
-    justify-content: center;
-    // align-items: center;
-    flex-direction: column;
-    align-items: center;
-    grid-area: secone;
+    @include sm {
+        display: flex;
+        justify-content: center;
+        // align-items: center;
+        flex-direction: column;
+        align-items: center;
+        grid-area: secone;
+    // width: 75%;
+    }
+    @include md {
+        display: flex;
+        justify-content: center;
+        // align-items: center;
+        flex-direction: column;
+        align-items: center;
+        grid-area: secone;
+    // width: 85%;
+    }
+    @include lg {
+        display: flex;
+        justify-content: center;
+        // align-items: center;
+        flex-direction: column;
+        align-items: center;
+        grid-area: secone;
+    // width: 100%;
+    }
+
+    
     
     width: 100%;
     .secOneSub{
@@ -135,20 +155,25 @@
     video{
         @include xs{
            
-            width: 300px;
-            height: 400px;
+            width: 100%;
+            // height: 400px;
+            margin-top: 25px;
+            // width: 100%;
 
         }
         @include sm{
-           
-            width: 250px;
-            height: 500px;
+            width: 100%;
+            margin-top: 25px;
+            // width: 250px;
+            // height: 500px;
 
         }
         @include md{
            
-            width: 390px;
-            height: 500px;
+            width: 100%;
+            // height: 400px;
+            margin-top: 25px;
+            
 
         }
         @include lg {
@@ -170,23 +195,28 @@ h1{
      
 @include xs{
 
-    @include HeadingsMixin($XS,XS);
+    @include HeadingsMixin($XS,XS,"");
 }
 @include md{
 
-    @include HeadingsMixin($MD,MD);
+    @include HeadingsMixin($MD,MD,"");
 }
 @include lg{
 
-    @include HeadingsMixin($lG,lG);
+    @include HeadingsMixin($lG,lG,"");
 }
    
 }
 p{
-     
-    @include xs{
+   text-align: center;
+
+     @include xs{
     
         @include ParagraphsMixin($XS,XS,"");
+    }
+    @include sm{
+    
+        @include ParagraphsMixin($SM,SM,"");
     }
     @include md{
     

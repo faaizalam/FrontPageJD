@@ -4,7 +4,7 @@ import ClassHome from "../Component/Homestyle/Sectiontwo.module.scss"
 import { Canvas } from "@react-three/fiber"
 import { MeshDistortMaterial, OrbitControls, Sphere } from "@react-three/drei"
 
-const Sectionone = () => {
+const Sectiontwo= () => {
 
 const ImagesPath=[
   {
@@ -61,4 +61,4 @@ Top performing teams around the world use theGist
   )
 }
 
-export default Sectionone
+export default Sectiontwo

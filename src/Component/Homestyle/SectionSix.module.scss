@@ -1,13 +1,14 @@
 @import "../Mixin/Mixin" ;
 @import "../Mixin/Variable";
 
-.Sectionfour{
+.Sectionsix{
     scroll-snap-align: center;
     overflow: hidden;
     // background-color: transparent;
     position: relative;
     // height: 100vh;
     display: flex;
+    margin-top: 5px;
     
  
         // "xs":0px,
@@ -18,7 +19,17 @@
         
         @include sm{
             position: relative;
-            // width: 90%;
+        //    width: 95%;
+           display: flex;
+           flex-direction: column;
+           
+           // background-color: rgb(139, 148, 131);
+           
+           
+        }
+        @include xs{
+            // width: 95%;
+            position: relative;
             
             display: flex;
             flex-direction: column;
@@ -27,9 +38,8 @@
             
             
         }
-     
         @include md{
-            // width: 90%;
+            // width: 95%;
             position: relative;
         
             display: flex;
@@ -43,7 +53,6 @@
             display: flex;
             flex-direction: row;
             // background-color: red;
-            // width: 100%;
     
             
     
@@ -88,7 +97,7 @@
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   transform: translate(340px);
+//    transform: translate(340px);
    overflow: hidden;
 // display: none;
 }
@@ -166,7 +175,7 @@ h1{
         // left: 200px;
 //   overflow: hidden;
       left:-70px ;
-        transform: translateX(-420px);
+        // transform: translateX(-420px);
         position: absolute;
         img{
             width:100%;
@@ -181,8 +190,8 @@ h1{
 
     // .demomain
 .onscreen{
-    transform: translate(0px);
-    transition: 2s ease-out all;
+    // transform: translate(0px);
+    // transition: 2s ease-out all;
 }
 
 // .leftfour{

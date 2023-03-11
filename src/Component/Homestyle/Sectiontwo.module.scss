@@ -2,6 +2,7 @@
 @import "../Mixin/Variable";
 $customsize:60;
 .MAINSECONSEC{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,6 +32,7 @@ $customsize:60;
 
 }
 .secImages{
+    width: 100%;
     
     @include xs{
         display: flex;
@@ -57,5 +59,7 @@ $customsize:60;
         justify-content: center;
         align-items: center;
     }
-    img{padding: 10px;}
+    img{padding: 10px;
+    // width: 200px;
+    }
 }

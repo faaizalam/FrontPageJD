@@ -2,9 +2,21 @@
   margin: 0;
   padding: 0;
   top: 0;
+
 }
+
+
+
+// body{
+//   overflow: hidden;
+// }
 
 @import "./Component/Homestyle/Home.module.scss";
 @import "./Component/Layout.module.scss";
 @import "./Component/Navbar.module.scss";
-// @import "./Component/Mixin/_Mixin.scss"
+@import "./Component/Mixin/_Mixin.scss";
+
+section{
+ width: 100%;
+
+}

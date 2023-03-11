@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
-import ClassHome from "../Component/Homestyle/Sectionthree.module.scss"
+import ClassHome from "../Component/Homestyle/Sectionseven.module.scss"
 
 
-const Sectionthree = () => {
+const Sectionseven = () => {
   // const n= document.querySelectorAll(".myanimation")
   useEffect(()=>{
 
@@ -10,7 +10,7 @@ const Sectionthree = () => {
       console.log(xleft)
       if (xleft.isIntersecting) {
         xleft.target.classList.add(`${ClassHome.onscreen}`)
-        xright.target.classList.add(`${ClassHome.onscreen}`)
+        // xright.target.classList.add(`${ClassHome.onscreen}`)
   
       
         
@@ -19,7 +19,7 @@ const Sectionthree = () => {
       
       
     })
-    let  card = document.querySelectorAll(".myanimation")
+    let  card = document.querySelectorAll(".myaniseven")
     
     card.forEach(ob => {
       observer.observe(ob)
@@ -38,12 +38,12 @@ const Sectionthree = () => {
     <>
    
  
-      <section className={ClassHome.Sectionthree}>
+      <section className={ClassHome.Sectionseven}>
     
-          <div className={`myanimation ${ClassHome.leftthree}`}>
+          <div className={`myaniseven ${ClassHome.leftthree}`}>
 
           <h1>
-          The magic of AI & deep learnings at your service
+          theGist for Gmail is coming soon!
           </h1>
           <div className={ClassHome.Linemain}>
             <div className={ClassHome.Linee}></div>
@@ -52,17 +52,17 @@ const Sectionthree = () => {
 
           
           <h2 className={ClassHome.h2three}>
-          theGist algorithm goes over the conversation, and instantly creates a short summary for you.
+          Join our Waiting list to get updates.
           </h2>
           </div>
           <div className={ClassHome.Rightthree}>
             <div>
 
-            <img src='./images/circle.jpg' alt='pic'></img>
+            <img className={ClassHome.imgback} src='./images/circle.jpg' alt='pic'></img>
             </div>
 
-         <div className={`myanimation ${ClassHome.RightthreeCard}`}>
-         <img src='./images/card.jpg' alt='pic'></img>
+         <div className={`${ClassHome.RightthreeCard}`}>
+         <img src='./images/gmail.jpg' alt='pic'></img>
           
          </div>
           </div>
@@ -77,4 +77,4 @@ const Sectionthree = () => {
   )
 }
 
-export default Sectionthree
+export default Sectionseven
