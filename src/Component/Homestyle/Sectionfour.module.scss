@@ -16,6 +16,17 @@
         // "lg":1070px,
         // "xl":1200px
         
+        @include xs{
+            position: relative;
+            // width: 90%;
+            
+            display: flex;
+            flex-direction: column;
+            
+            // background-color: rgb(139, 148, 131);
+            
+            
+        }
         @include sm{
             position: relative;
             // width: 90%;
@@ -121,19 +132,20 @@ h1{
     }
     
     max-width: 500px;
-    margin-bottom: 60px;
+    margin-bottom: 10px;
 }
 .h2four{
-    margin-top: 60px;
+    margin-top: 10px;
     line-height: 2pc;
     max-width: 500px;
+    padding: 10px;
     @include xs {
     
-        @include HeadingsMixin($XS,XS,20px);
+        @include HeadingsMixin($XS,XS,15px);
     }
     @include md{
     
-        @include HeadingsMixin($MD,MD,20px);
+        @include HeadingsMixin($MD,MD,15px);
     }
     @include lg{
     
@@ -171,6 +183,10 @@ h1{
         img{
             width:100%;
             // height: 400px;
+        }
+        @include xs{
+            
+            transform: translateX(-320px);
         }
     }
     

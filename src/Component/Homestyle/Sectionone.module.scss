@@ -12,6 +12,13 @@
         align-items: center;
         grid-area: secone;
     // width: 75%;
+    
+    }
+    video{
+        @include sm{
+            // width: 80%;
+
+        }
     }
     @include md {
         display: flex;
@@ -30,6 +37,7 @@
         align-items: center;
         grid-area: secone;
     // width: 100%;
+    margin-left: -25px;
     }
 
     
@@ -100,12 +108,12 @@
 }
 
 .threeDanimdiv{
-    margin-left: 100px;
+    // margin-left: 100px;
 
 //   position: relative;
   height: 100%;
 //   width: 50%;
-  display: flex;
+//   display: flex;   one
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -155,14 +163,14 @@
     video{
         @include xs{
            
-            width: 100%;
+            width: 70%;
             // height: 400px;
             margin-top: 25px;
             // width: 100%;
 
         }
         @include sm{
-            width: 100%;
+            width: 80%;
             margin-top: 25px;
             // width: 250px;
             // height: 500px;
@@ -237,7 +245,7 @@ p{
     padding: 30px;
     img{
         border-radius: 10px;
-        width: 350px;
+        width: 100%;
         height: 60px;
     }
 
