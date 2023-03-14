@@ -1,0 +1,38 @@
+@import "../Mixin/Mixin" ;
+@import "../Mixin/Variable";
+
+
+.foots{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.foots svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 92px;
+    transform: rotateY(180deg);
+}
+
+.foots .shape {
+    fill: #161616;
+}
+.spans{
+    @include lg{
+        margin-right: 50px;
+    }
+}
+.txts{
+    top: 30px;
+    font-size: 14px;
+    @include lg{
+        
+        top: 60px;
+    }
+}

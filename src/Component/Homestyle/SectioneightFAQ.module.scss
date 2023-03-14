@@ -1,0 +1,114 @@
+@import "../Mixin/Mixin" ;
+@import "../Mixin/Variable";
+.mainfaq{
+    width: 100%;
+}
+.faqmain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.faqtitlenumber{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    // display: flex+;
+    
+}
+.faqpara{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    // width: 50%;
+    overflow: hidden;
+    text-overflow:e;
+    text-align: center;
+
+}
+h1{
+ text-align: center;
+
+     
+    @include xs {
+    
+        @include HeadingsMixin($XS,XS,"");
+    }
+    @include md{
+    
+        @include HeadingsMixin($MD,MD,"");
+    }
+    @include lg{
+        // min-width: 200px;
+        // min-width: 200px;
+        @include HeadingsMixin($lG,lG,40px);
+    }
+    
+    max-width: 500px;
+    margin-bottom: 60px;
+}
+p{
+    width: 50%;
+    text-align: center;
+ 
+      @include xs{
+     
+         @include ParagraphsMixin($XS,XS,"");
+     }
+     @include sm{
+     
+         @include ParagraphsMixin($SM,SM,"");
+     }
+     @include md{
+     
+         @include ParagraphsMixin($MD,MD,"");
+     }
+     @include lg{
+     
+         @include ParagraphsMixin($lG,lG,15px);
+     }
+        
+     }
+ 
+ 
+    .faqtitlenumber.details > summary {
+        list-style-type: '';
+    }
+    details > summary {
+        list-style-type: '';
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    // details[open] > summary {
+    //     list-style-type: '';
+    // }
+    .ids{
+        display: flex;
+        margin-right: 10px;
+        justify-content: center;
+        align-items: center;
+        
+        height: 100px;
+        background-color: blue;
+        color: white;
+        width: 80px;
+    }
+    .faqlines{
+        // display: flex;
+        // align-items: flex-start;
+        flex-direction: column;
+    }
+    .texts{
+        width: 250px;
+        flex-wrap: wrap;
+        text-align: center;
+
+    }

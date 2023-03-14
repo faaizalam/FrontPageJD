@@ -7,6 +7,7 @@ import Sectionfour from '../Component/Sectionfour'
 import Sectionfive from '../Component/Sectionfive'
 import SectionSix from '../Component/SectionSix'
 import Sectionseven from '../Component/Sectionseven'
+import SectionEightFaq from '../Component/SectioneightFaq'
 // import Class from "../Component/Navbar.module.scss"
 
 
@@ -20,6 +21,7 @@ export const Home = () => {
 <Sectionfive/>
 <SectionSix/>
 <Sectionseven/>
+<SectionEightFaq/>
     
     </>
   )

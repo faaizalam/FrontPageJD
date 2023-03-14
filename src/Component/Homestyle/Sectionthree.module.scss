@@ -125,6 +125,7 @@ h1{
     margin-bottom: 60px;
 }
 .h2three{
+    text-align: center;
     margin-top: 50px;
     line-height: 2pc;
     max-width: 500px;
@@ -176,7 +177,7 @@ h1{
         }
         @include xs{
             top: 150px;
-            transform: translateX(-320px);
+            transform: translateX(320px);
         }
     }
     .leftthree{
@@ -190,7 +191,7 @@ h1{
 
     // .demomain
 .onscreen{
-    transform: translate(100px);
+    transform: translate(0px);
     transition: 2s ease-out all;
 }
 

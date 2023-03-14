@@ -19,7 +19,7 @@ const Sectionthree = () => {
       
       
     })
-    let  card = document.querySelectorAll(".myanimation")
+    let  card = document.querySelectorAll(".myanimationthree")
     
     card.forEach(ob => {
       observer.observe(ob)
@@ -40,7 +40,7 @@ const Sectionthree = () => {
  
       <section className={ClassHome.Sectionthree}>
     
-          <div className={`myanimation ${ClassHome.leftthree}`}>
+          <div className={`myanimationthree ${ClassHome.leftthree}`}>
 
           <h1>
           The magic of AI & deep learnings at your service
@@ -61,7 +61,7 @@ const Sectionthree = () => {
             <img src='./images/circle.jpg' alt='pic'></img>
             </div>
 
-         <div className={`myanimation ${ClassHome.RightthreeCard}`}>
+         <div className={`myanimationthree ${ClassHome.RightthreeCard}`}>
          <img src='./images/card.jpg' alt='pic'></img>
           
          </div>

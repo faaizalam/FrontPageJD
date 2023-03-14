@@ -15,6 +15,7 @@ body{
 }
 .main{
     display: grid;
+
     background-color:$background-color;
     color: $colorbodytext;
     grid-template-areas: "header" "main" "footer";
@@ -32,6 +33,7 @@ header{
 }
 main{
     grid-area: main;
+    overflow: hidden;
     width: 100%;
     // display: grid;
     // height: 100vh;
@@ -44,5 +46,9 @@ main{
   
 }
 footer{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    position: relative;
     grid-template-areas: footer;
 }

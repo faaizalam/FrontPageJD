@@ -18,7 +18,7 @@ const Sectionfour = () => {
       
       
     })
-    let  card = document.querySelectorAll(".myanimation")
+    let  card = document.querySelectorAll(".myanimationfour")
     
     card.forEach(ob => {
       observer.observe(ob)
@@ -36,14 +36,14 @@ const Sectionfour = () => {
       <img src='./images/sectfourcardback.jpg' alt='pic'></img>
       </div>
 
-   <div className={`myanimation ${ClassHome.RightthreeCard}`}>
+   <div className={`myanimationfour ${ClassHome.RightthreeCard}`}>
    <img src='./images/secfcard.jpg' alt='pic'></img>
     
    </div>
     </div>
 
 
-    <div className={`myanimation ${ClassHome.leftfour}`}>
+    <div className={`myanimationfour ${ClassHome.leftfour}`}>
 
     <h1>
     Instantly catch up with your team's important discussions

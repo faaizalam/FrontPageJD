@@ -37,7 +37,7 @@
         align-items: center;
         grid-area: secone;
     // width: 100%;
-    margin-left: -25px;
+    // margin-left: -25px;
     }
 
     
@@ -117,6 +117,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @include lg{
+    margin-left: 100px;
+  }
 //   width: 100%;
 
     
@@ -193,7 +196,7 @@
     }
 }
 .SeconeUptext{
-height: 250px;
+// height: 250px;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -245,8 +248,14 @@ p{
     padding: 30px;
     img{
         border-radius: 10px;
-        width: 100%;
+        width: 80%;
         height: 60px;
+        
+        @include lg{
+            
+            height: 60px;
+            width: 50%;
+        }
     }
 
 }

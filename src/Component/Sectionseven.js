@@ -39,8 +39,8 @@ const Sectionseven = () => {
    
  
       <section className={ClassHome.Sectionseven}>
-    
           <div className={`myaniseven ${ClassHome.leftthree}`}>
+    
 
           <h1>
           theGist for Gmail is coming soon!
