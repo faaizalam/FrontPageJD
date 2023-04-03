@@ -4,19 +4,20 @@ import Class from "../Component/Navbar.module.scss"
 
 import { FaHamburger } from "react-icons/fa";
 import { GrClose } from "react-icons/gr";
+import { Linkedin,Mail,Facebook} from 'react-social-sharing'
 
 const Header = () => {
 
 
-const HumburgerRef=useRef()
-const sidebarOpen=(()=>{
-  HumburgerRef.current.classList.add(`${Class.ActiveHum}`)
+    const HumburgerRef = useRef()
+    const sidebarOpen = (() => {
+        HumburgerRef.current.classList.add(`${Class.ActiveHum}`)
 
-})
-const sidebarClose=(()=>{
-  HumburgerRef.current.classList.remove(`${Class.ActiveHum}`)
+    })
+    const sidebarClose = (() => {
+        HumburgerRef.current.classList.remove(`${Class.ActiveHum}`)
 
-})
+    })
 
 
 
@@ -28,71 +29,72 @@ const sidebarClose=(()=>{
             path: ""
         },
         {
-            title: "Security and Privacy",
+            title: "Projects",
             path: ""
         },
         {
-            title: "Pricing",
+            title:<Facebook className={`${Class.mail}`}  link="http://sharingbuttons.io"/>,
             path: ""
         },
         {
-            title: "Blog",
+            title:<Mail  className={`${Class.mail}`}  link="https://github.com" />,
             path: ""
         },
         {
-            title: "Company",
+            title:<Linkedin className={`${Class.linked}`} link="https://github.com"
+          
+          />,
             path: ""
         },
-        {
-            
-            image: "./images/Btnslack.jpg",
-            path: ""
-        },
+       
 
     ]
+    
+      const localise=((x,y)=>{
+        console.log(x,y)
+      })
+    const Headcomponent = (() => {
 
-    const Headcomponent=(()=>{
-           
 
 
-        return(
-          <>
+        return (
+            <>
 
-            <ul  className={Class.navleft}>
-                {
-                    linkRoutes.map((x) => (
-                        <>
-                            {
-                                x.image?(
-                                    <li> <img
-                            src={x.image && x.image}
-                            alt="BtnSlack"
-                            
-                            >
-                        </img></li>):
-                            (
-                                    <li>
-                                       
-                                        <li className={x.title==="Company"?Class.Hover:""}>{x.title}
-                                            
-                                        {
+                <ul className={Class.navleft}>
+                    {
+                        linkRoutes.map((x) => (
+                            <>
+                                {
+                                    x.image ? (
+                                        <li> <img
+                                            src={x.image && x.image}
+                                            alt="BtnSlack"
 
-                                            x.title==="Company"&&(<ul className={Class.HOverli}><li >About</li>
-                                            <li >Careers</li>
-                                            </ul>)
-                                        }
-                                        
-                                        </li>
-                                        
-                                    </li>)  
-                            }
+                                        >
+                                        </img></li>) :
+                                        (
+                                            <li>
+
+                                                <li className={x.title === "Company" ? Class.Hover : ""}>{x.title}
+
+                                                    {
+
+                                                        x.title === "Company" && (<ul className={Class.HOverli}><li >About</li>
+                                                            <li >Careers</li>
+                                                        </ul>)
+                                                    }
+
+                                                </li>
+
+                                            </li>)
+                                }
                             </>
-                    ))
-                }
+                        ))
+                    }
                 </ul>
-                  <ul className={Class.humburger}>
+                <ul className={Class.humburger}>
                     <span onClick={sidebarOpen}>
-                  <FaHamburger/>
+                        <FaHamburger />
 
                     </span>
                     {/* {
@@ -104,70 +106,72 @@ const sidebarClose=(()=>{
                         ))
                     } */}
 
-                  </ul>
-                                    </>
+                </ul>
+            </>
         )
     })
 
 
     return (
-        
+
         <header className={Class.nav}>
-     
+
             <div className={Class.logo}>
                 <img src="./images/logo.PNG" alt='logo'></img>
-               <p className={Class.logotext}>
-                the
-                <span>Gist</span>
+                <p className={Class.logotext}>
+                    the
+                    <span>Gist</span>
 
-               </p>
-               
+                    {/* <Twitter link="https://github.com" /> */}
+                </p>
+    
             </div>
+
             <div className={Class.LogoInresponsive}>
-             {/* <span> */}
-            <svg className={Class.Svg} viewBox="0 0 100 100" width="200px" height="200px">
-     <circle cx="50"  cy="50" r="40" stroke="" stroke-width="4" fill="#AA336A" />
-   </svg>
- <div className={Class.SvgImg}>
-    <img src='./images/Frame.jpg' alt='img'></img>
-    <span>theGist for</span>
-    <span>Gmail</span>
- </div>
-             {/* </span> */}
-      
+                {/* <span> */}
+                <svg className={Class.Svg} viewBox="0 0 100 100" width="200px" height="200px">
+                    <circle cx="50" cy="50" r="40" stroke="" stroke-width="4" fill="#AA336A" />
+                </svg>
+                <div className={Class.SvgImg}>
+                    <img src='./images/Frame.jpg' alt='img'></img>
+                    <span>theGist for</span>
+                    <span>Gmail</span>
+                </div>
+                {/* </span> */}
+
             </div>
             <div className={Class.LeftNav}>
-                
-   <Headcomponent/>
+
+                <Headcomponent />
 
             </div>
 
-        <aside  ref={HumburgerRef} className={Class.Aisde}>
-            <div className={Class.sidebarchild}>
-             <div className={Class.sidebarchildElemnts}>
+            <aside ref={HumburgerRef} className={Class.Aisde}>
+                <div className={Class.sidebarchild}>
+                    <div className={Class.sidebarchildElemnts}>
 
-            <span className={Class.CloseBtn} onClick={sidebarClose}>
+                        <span className={Class.CloseBtn} onClick={sidebarClose}>
 
-        <GrClose/>
-            </span>
-            {
-                linkRoutes.filter((x)=>!x.image).map((x)=>(
-                    <ul>
-                        <li>{x.title}</li>
-                    </ul>
-                ))
-            }
+                            <GrClose />
+                        </span>
+                        {
+                            linkRoutes.filter((x) => !x.image).map((x) => (
+                                <ul>
+                                    <li>{x.title}</li>
+                                </ul>
+                            ))
+                        }
 
-            
 
-     
-             </div>
-            </div>
-            
 
-        </aside>
+
+                    </div>
+                </div>
+
+
+            </aside>
         </header>
-        
+
     )
 }
 

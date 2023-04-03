@@ -2,7 +2,9 @@ import React, { useEffect } from 'react'
 import secteight from "../Component/Homestyle/SectioneightFAQ.module.scss"
 import { FAQ } from './FAQdata'
 import parse from "html-react-parser"
-
+// import MessengerCustomerChat from 'react-messenger-customer-chat';
+// "205375315461291"
+// page  216280915482971
 const SectionEightFaq = () => {
 
 // useEffect(()=>{
@@ -13,7 +15,6 @@ const SectionEightFaq = () => {
       
 //       const ani=new KeyframeEffect(xx,[
 //         {opacity:0,marginLeft:"-10px"},
-//         {opacity:1,marginLeft:"0"}
         
 //       ],
 //       {duration:5000,easing:"ease-in"}

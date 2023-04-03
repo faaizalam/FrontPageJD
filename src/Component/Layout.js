@@ -2,13 +2,25 @@ import React from 'react'
 import Classs from "../Component/Layout.module.scss"
 import Clsfooter from "../Component/Homestyle/Footer.module.scss"
 import Header from './Header'
+
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 // import { Home } from '../Pages/Home'
 const Layout = ({children}) => {
 
-
+// "205375315461291"
+// page  216280915482971
   const Footer=(()=>{
     return(
       <footer>
+        <div className='fixsocail' style={{position:"fixed",top:"500px",right:"20px",font:"500px"}}> 
+   {/* <Whatsapp style={Clsfooter.Whatsapps} solidcircle small message="Share on Whatsapp" link="http://sharingbuttons.io"/> */}
+   <MessengerCustomerChat
+    pageId="216280915482971"
+    appId="205375315461291"
+    
+  />,
+        </div>  
+
      <div className={Clsfooter.foots}>
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
         <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" className={Clsfooter.shape}></path>
