@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/FrontPageJD/static/css/main.9f0eff4b.css",
+    "main.js": "/FrontPageJD/static/js/main.14204eb6.js",
+    "static/js/787.91781e46.chunk.js": "/FrontPageJD/static/js/787.91781e46.chunk.js",
+    "static/media/logo.svg": "/FrontPageJD/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/FrontPageJD/index.html",
+    "main.9f0eff4b.css.map": "/FrontPageJD/static/css/main.9f0eff4b.css.map",
+    "main.14204eb6.js.map": "/FrontPageJD/static/js/main.14204eb6.js.map",
+    "787.91781e46.chunk.js.map": "/FrontPageJD/static/js/787.91781e46.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9f0eff4b.css",
+    "static/js/main.14204eb6.js"
+  ]
+}
